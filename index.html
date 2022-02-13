@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2nd Project</title>
-    <link rel="stylesheet" href="project2.css">
-</head>
-<body>
-    <div class="result">
-        <h1 id="value">0</h1>
-    </div>
-    <div class="buttons">
-        <!-- ROW 1 -->
-        <button class="general clear" onclick="operate(event)">C</button>
-        <button class="general" onclick="backspace()">&larr;</button> <!--&larr; stands for left arrow-->
-        <button class="general operator" onclick="operate(event)">&#247;</button> <!--Character entity for divide symbol-->
-        <!-- ROW 2 -->
-        <button class="general" onclick="append(event)">7</button>
-        <button class="general" onclick="append(event)">8</button>
-        <button class="general" onclick="append(event)">9</button>
-        <button class="general operator" onclick="operate(event)">&#215;</button> <!--Character entity for multiply symbol-->
-        <!-- ROW 3 -->
-        <button class="general" onclick="append(event)">4</button>
-        <button class="general" onclick="append(event)">5</button>
-        <button class="general" onclick="append(event)">6</button>
-        <button class="general operator" onclick="operate(event)">-</button>
-        <!-- ROW 4 -->
-        <button class="general" onclick="append(event)">1</button>
-        <button class="general" onclick="append(event)">2</button>
-        <button class="general" onclick="append(event)">3</button>
-        <button class="general operator" onclick="operate(event)">+</button>
-        <!-- ROW 5 -->
-        <button class="general cero" onclick="append(event)">0</button>
-        <button class="general operator" onclick="solve()">=</button>
-    </div>
-    <script src="project2.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>2nd Project</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div class="result">
+            <h1 id="value">0</h1>
+        </div>
+        <div class="buttons">
+            <!-- ROW 1 -->
+            <button class="general clear" onclick="operate(event)">C</button>
+            <button class="general" onclick="backspace()">&larr;</button>
+            <!--&larr; stands for left arrow-->
+            <button class="general operator" onclick="operate(event)">
+                &#247;
+            </button>
+            <!--Character entity for divide symbol-->
+            <!-- ROW 2 -->
+            <button class="general" onclick="append(event)">7</button>
+            <button class="general" onclick="append(event)">8</button>
+            <button class="general" onclick="append(event)">9</button>
+            <button class="general operator" onclick="operate(event)">
+                &#215;
+            </button>
+            <!--Character entity for multiply symbol-->
+            <!-- ROW 3 -->
+            <button class="general" onclick="append(event)">4</button>
+            <button class="general" onclick="append(event)">5</button>
+            <button class="general" onclick="append(event)">6</button>
+            <button class="general operator" onclick="operate(event)">-</button>
+            <!-- ROW 4 -->
+            <button class="general" onclick="append(event)">1</button>
+            <button class="general" onclick="append(event)">2</button>
+            <button class="general" onclick="append(event)">3</button>
+            <button class="general operator" onclick="operate(event)">+</button>
+            <!-- ROW 5 -->
+            <button class="general cero" onclick="append(event)">0</button>
+            <button class="general operator" onclick="solve()">=</button>
+        </div>
+        <script src="./main.js"></script>
+    </body>
 </html>
