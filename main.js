@@ -1,6 +1,10 @@
 let num1;
 let num2;
 let symbol;
+let multiplyButton = document.getElementById("multiply");
+let multiplySymbol = multiplyButton.innerHTML; // This will be "×"
+let divideButton = document.getElementById("divide");
+let divideSymbol = divideButton.innerHTML; // This will be "÷"
 
 function backspace() {
     const txtValue = document.getElementById("value");
@@ -16,7 +20,6 @@ function append(event){
     const newNumber = event.target.textContent;
     let txtValue = document.getElementById("value");
     const number = txtValue.textContent;
-    console.log(num2)
     if (number === "0") {
         txtValue.innerHTML = newNumber;
     } else if (num2){ //if writing the second number, we'll rewrite what is in the result section
@@ -41,16 +44,15 @@ function solve() {
     let result = 0;
     const txtValue = document.getElementById("value");
     num2 = parseInt(txtValue.textContent); //well now num2 is actually a number
-    console.log(symbol)
     switch (symbol) {
         case "C":
             txtValue.innerHTML = "0";
             num2 = Boolean(false); //to prevent take a wrong num2, cause with C you clear all 
             break;
-        case "÷":
+        case divideSymbol:
             result = num1 / num2;
             break;
-        case "×":
+        case multiplySymbol:
             result = num1 * num2;
             break;
         case "+":
